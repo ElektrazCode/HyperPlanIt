@@ -8,5 +8,13 @@
     "start": "node server.js"
   },
   "author": "Mary Rose Boulos",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElektrazCode/HyperPlanIt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ElektrazCode/HyperPlanIt/issues"
+  },
+  "homepage": "https://github.com/ElektrazCode/HyperPlanIt#readme"
 }
