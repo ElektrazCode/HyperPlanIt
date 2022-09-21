@@ -1,0 +1,23 @@
+{
+  "name": "hyperplanit",
+  "version": "1.0.0",
+  "description": "Plan and Manage Everything in one place",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElektrazCode/HyperPlanIt.git"
+  },
+  "author": "ElektrazCode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ElektrazCode/HyperPlanIt/issues"
+  },
+  "homepage": "https://github.com/ElektrazCode/HyperPlanIt#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
