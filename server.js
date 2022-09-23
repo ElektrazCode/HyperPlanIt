@@ -9,6 +9,7 @@ const flash = require("express-flash");                 // imports the flash pac
 const logger = require("morgan");                       // imports the morgan package, which allows http request logging
 const connectDB = require("./config/database");
 const mainRoutes = require("./routes/main");            // imports the main routes from the routes/main file 
+const dashboardRoutes = require("./routes/dashboard");  // imports the dashboard routes from the routes/dashboard file 
 
 require("dotenv").config({ path: "./config/.env" }); 
 
@@ -44,6 +45,7 @@ app.use(passport.session());
 app.use(flash());
 
 //Setup Routes for which the server is listening
-app.use("/", mainRoutes); 
+app.use("/", mainRoutes);
+app.use("/dashboard", mainRoutes);
 
 app.listen(process.env.PORT, () => console.log("Server is running on port", process.env.PORT));
