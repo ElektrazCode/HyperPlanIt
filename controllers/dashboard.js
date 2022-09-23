@@ -1,8 +1,7 @@
 module.exports = {
     getDashboard: (req, res) => {
         try{
-            console.log("We're in!");
-            res.render("dashboard.ejs");
+            res.render("dashboard.ejs", {user: req.user});
         }
         catch(err){
             console.log(err);
