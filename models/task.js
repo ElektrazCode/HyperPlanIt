@@ -1,16 +1,13 @@
 const mongoose = require("mongoose");
 
-const taskSchema = new mongoose.Schema({
-  task:{
-    type: String
-  },
-  list:{
-    type: String
-  },
-  user: { 
+const TaskSchema = new mongoose.Schema({
+  title:{
     type: String,
-    unique: true,
-    required: true
+    required: true,
+  },
+  list: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "List",
   },
   created: {
     type: Date,
@@ -25,5 +22,11 @@ const taskSchema = new mongoose.Schema({
   },
   progress:{
     type: Number
+  },
+  recurrent:{
+    type: Boolean,
+    deafult: false
   }
 });
+
+module.exports = mongoose.model("Task", TaskSchema);

@@ -4,9 +4,7 @@ require("dotenv").config({ path: "./config/.env" });    //Use .env file in confi
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.DB_STRING, {
-      useNewUrlParser: true
-    });
+    const conn = await mongoose.connect(process.env.DB_STRING, {useNewUrlParser: true});
 
     console.log(`MongoDB Connected!`); // ${conn.connection.host}
   } catch (err) {
