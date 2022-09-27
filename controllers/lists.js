@@ -19,9 +19,7 @@ module.exports = {
                 category: "ToDo",
                 user: req.user.id,
             });
-            console.log(req.body);
             const total = req.body.taskName.length;
-            console.log(total);
             for (let i=0; i<total; i++){
                 await Task.create({
                     title: req.body.taskName[i],
@@ -44,6 +42,23 @@ module.exports = {
             await Task.deleteMany({ list: req.params.id });
             res.redirect("/lists/todo");
         } catch(err){
+            console.log(err);
+            res.redirect("/lists/todo");
+        }
+    },
+    addTask: async (req, res) => {
+        console.log(req.body);
+        try{
+            await Task.create({
+                title: req.body.taskName[0],
+                list: req.params.listId,
+                user: req.user.id[0],
+                due: req.body.dueDate[0],
+                recurrent: req.body.frequency[0] ? true : false,
+                frequency: req.body.frequency[0]
+            });
+            res.redirect("/lists/todo");
+        } catch (err){
             console.log(err);
             res.redirect("/lists/todo");
         }

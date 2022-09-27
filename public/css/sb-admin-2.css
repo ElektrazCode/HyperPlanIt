@@ -241,6 +241,10 @@ button {
 button:focus:not(:focus-visible) {
   outline: 0;
 }
+input{
+  border: none;
+  background: transparent;
+}
 
 input,
 button,
