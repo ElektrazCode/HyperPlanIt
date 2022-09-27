@@ -21,11 +21,16 @@ const TaskSchema = new mongoose.Schema({
     default: false
   },
   progress:{
-    type: Number
+    type: Number,
+    default: 0
   },
   recurrent:{
     type: Boolean,
-    deafult: false
+    default: false
+  },
+  frequency:{
+    type: Number,
+    default: 0
   }
 });
 

@@ -5,5 +5,6 @@ const { ensureAuth, ensureGuest } = require("../middleware/auth");
 
 router.get("/todo", ensureAuth, listsController.getTodo);
 router.post("/createTodo", ensureAuth, listsController.createTodo);
+router.post("/deleteTodo", ensureAuth, listsController.deleteList);
 
 module.exports = router;
