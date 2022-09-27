@@ -9,6 +9,7 @@ module.exports = {
             res.render("todo.ejs", { lists: lists, user: req.user, tasks: tasks });
         } catch (err) {
             console.log(err);
+            res.redirect("/lists/todo");
         }
     },
     createTodo: async (req, res) => {
@@ -33,10 +34,18 @@ module.exports = {
             }
             res.redirect("/lists/todo");
         } catch (err) {
-        console.log(err);
+            console.log(err);
+            res.redirect("/lists/todo");
         }
     },
     deleteList: async (req, res) => {
-        console.log(req.body);
+        try{
+            await List.deleteOne({ _id: req.params.id });
+            await Task.deleteMany({ list: req.params.id });
+            res.redirect("/lists/todo");
+        } catch(err){
+            console.log(err);
+            res.redirect("/lists/todo");
+        }
     }
 };

@@ -95,7 +95,7 @@
                                     <div
                                         class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                         <h6 class="m-0 font-weight-bold text-primary"><%= lists[i].title %></h6>
-                                        <%- include ('partials/listmenu') -%>
+                                        <%- include ('partials/listmenu', {list: lists[i]}) -%>
                                     </div>
 
                                     <!-- Card Body - Tasks -->
