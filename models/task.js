@@ -1,17 +1,13 @@
 const mongoose = require("mongoose");
 
 const TaskSchema = new mongoose.Schema({
-  title: {
-    type: String,
-    required: true,
-  },
   list: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "List",
   },
-  created: {
-    type: Date,
-    default: Date.now
+  task: {
+    type: String,
+    required: true,
   },
   due: {
     type: Date
@@ -31,6 +27,14 @@ const TaskSchema = new mongoose.Schema({
   frequency:{
     type: Number,
     default: 0
+  },
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+  },
+  created: {
+    type: Date,
+    default: Date.now
   }
 });
 

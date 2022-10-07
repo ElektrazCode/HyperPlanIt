@@ -27,11 +27,11 @@
                     
                      <!-- Create New List Form -->
                     <div id="createNewSec" class="card" style="display: none">
-                        <form id="createTodo" action="/lists/createTodo" method="POST"></form>
+                        <form id="createList" action="/lists/createList" method="POST"></form>
                         <table class="table table-sm table-striped table-bordered">
                             <thead>
                                 <tr>
-                                    <th scope="col" colspan="5"><input form="createTodo" class="form-control" type="text" name="listName" placeholder="Enter List Name" style="text-align: center"></th>
+                                    <th scope="col" colspan="5"><input form="createList" class="form-control" type="text" name="listName" placeholder="Enter List Name" style="text-align: center"></th>
                                 </tr>
                                 <tr>
                                     <th scope="col">#</th>
@@ -44,43 +44,43 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td><input form="createTodo" class="custom-control-sm" type="text" placeholder="Task" name="taskName"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="date" placeholder="Due Date" name="dueDate"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="checkbox" name="recurrent"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="number" placeholder="Number of days" name="frequency"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="text" placeholder="Task" name="taskName"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="date" placeholder="Due Date" name="dueDate"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="checkbox" name="recurrent"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="number" placeholder="Number of days" name="frequency"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td><input form="createTodo" class="custom-control-sm" type="text" placeholder="Task" name="taskName"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="date" placeholder="Due Date" name="dueDate"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="checkbox" name="recurrent"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="number" placeholder="Number of days" name="frequency"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="text" placeholder="Task" name="taskName"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="date" placeholder="Due Date" name="dueDate"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="checkbox" name="recurrent"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="number" placeholder="Number of days" name="frequency"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
-                                    <td><input form="createTodo" class="custom-control-sm" type="text" placeholder="Task" name="taskName"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="date" placeholder="Due Date" name="dueDate"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="checkbox" name="recurrent"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="number" placeholder="Number of days" name="frequency"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="text" placeholder="Task" name="taskName"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="date" placeholder="Due Date" name="dueDate"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="checkbox" name="recurrent"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="number" placeholder="Number of days" name="frequency"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">4</th>
-                                    <td><input form="createTodo" class="custom-control-sm" type="text" placeholder="Task" name="taskName"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="date" placeholder="Due Date" name="dueDate"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="checkbox" name="recurrent"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="number" placeholder="Number of days" name="frequency"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="text" placeholder="Task" name="taskName"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="date" placeholder="Due Date" name="dueDate"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="checkbox" name="recurrent"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="number" placeholder="Number of days" name="frequency"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">5</th>
-                                    <td><input form="createTodo" class="custom-control-sm" type="text" placeholder="Task" name="taskName"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="date" placeholder="Due Date" name="dueDate"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="checkbox" name="recurrent"></td>
-                                    <td><input form="createTodo" class="custom-control-sm" type="number" placeholder="Number of days" name="frequency"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="text" placeholder="Task" name="taskName"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="date" placeholder="Due Date" name="dueDate"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="checkbox" name="recurrent"></td>
+                                    <td><input form="createList" class="custom-control-sm" type="number" placeholder="Number of days" name="frequency"></td>
                                 </tr>
                             </tbody>
                         </table>
                         <div class="row justify-content-center">
-                            <button form="createTodo" class="btn btn-sm btn-primary shadow-sm" type="submit">Save</button>
+                            <button form="createList" class="btn btn-sm btn-primary shadow-sm" type="submit">Save</button>
                         </div>
                         <br>
                     </div>
@@ -91,7 +91,6 @@
                         <div class="row">
                             <div class="col-xl-4 col-xl">
                                 <div class="card shadow mb-4">
-
                                     <!-- Card Header - Dropdown -->
                                     <div
                                         class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -100,16 +99,17 @@
                                     </div>
 
                                     <!-- Card Body - Tasks -->
-                                    <div class="card-body">
+                                    <div class="card-body" id="<%= lists[i].title %>">
                                         <ol>
                                             <% for (var j=0; j<tasks.length; j++) { %>
                                                 <% if (tasks[j].list.toString() == lists[i]._id.toString()) { %>
-                                                    <li><%= tasks[j].title %></li>
+                                                    <li><%= tasks[j].task %></li>
                                                 <% } %>
                                             <% } %>
                                         </ol>
+                                        <% const list = lists[i]._id %>
                                         <div id="addTaskSec" style="display: none">
-                                            <form id="addTask" action="/lists/addTask/<%= lists[i]._id %>" method="POST"></form>
+                                            <form id="addTask" action="/lists/addTask/<%=list%>" method="POST"></form>
                                             <table class="table table-sm">
                                                 <thead>
                                                     <tr>
